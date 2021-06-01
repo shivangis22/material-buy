@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 import {FaAngleDown} from 'react-icons/fa';
+// import { Dropdown} from 'semantic-ui-react';
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import DropdownButton from 'react-bootstrap/DropdownButton';
 // import Dropdown from 'react-bootstrap/Dropdown';
@@ -11,12 +13,14 @@ function LinkItems(){
         
     return(
         <div className="linkGrid" >
-             {/* <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-             </DropdownButton> */}
+            
+            
             <div className="dropdwn">
+            {/* <Dropdown text="All">
+                <Dropdown.Item text="Building Materials"/>
+                <Dropdown.Item text="Roofing Materials"/>
+            </Dropdown>            */}
+
             <a href="#" className="drphd" >All<FaAngleDown className="arrw-dwn"></FaAngleDown> </a>
             <div className="drpdwn-Cnt" id="All-drpdwn">
             <a className="Link" href="index.html">Building Materials</a>
