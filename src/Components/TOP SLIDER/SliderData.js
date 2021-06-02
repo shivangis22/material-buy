@@ -1,4 +1,4 @@
-import img from '../Images/sliderimg.png';
+import img from './Slider Images/sliderimg.png';
 
 export const SliderData=[
   {

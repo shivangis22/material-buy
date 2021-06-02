@@ -1,7 +1,8 @@
 import React from 'react';
-import '../App.css';
+// import '../App.css';
 import {FaHeart} from 'react-icons/fa';
-import ProductImg from '../Images/ProductImg.png';
+import ProductImg from './Product Images/ProductImg.png';
+import './ProductSlider.css';
 
 
 function ProductCard(props){

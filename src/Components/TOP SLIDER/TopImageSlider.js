@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {SliderData} from './SliderData';
-import '../App.css';
+// import '../App.css';
+import './Slider.css';
 import {FaAngleRight, FaAngleLeft} from 'react-icons/fa' ;
 
 
@@ -23,6 +24,7 @@ const TopImageSlider= ({slide})=> {
 
 
   return (
+
      <section className="slider" >
      <FaAngleLeft className="left-arrw" onClick={prevSlide}/>
      <FaAngleRight className="right-arrw" onClick={nextSlide}/>
@@ -36,8 +38,7 @@ const TopImageSlider= ({slide})=> {
         
     
     })}
-    </section>);
-    
+    </section>);  
     
     
 };

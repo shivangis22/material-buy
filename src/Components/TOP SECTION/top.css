@@ -1,0 +1,139 @@
+
+/* NAVBAR */
+.Navbar2{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+    padding: 20px 0;
+  }
+  
+  /* SEARCH SECTION */
+  .search-column{
+    width: 595px;
+    border: 1px solid #dd412d;
+    border-radius: 4px;
+    display: flex;
+  }  
+  .search{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;  
+  }  
+  .search-icon{
+    margin: 7px;
+    width: 28px;
+    height: 28px;  
+    color: #dd412d;
+  }  
+  .search-input{
+    border: none;
+    width: 410px;
+    height: 45px;
+    padding: auto;
+  }  
+  .search-input::placeholder{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #373737;
+  }  
+  .search-btn{
+    background: #DD412D 0% 0% no-repeat padding-box;
+    border-radius: 0px 4px 4px 0px;
+    width: 113px;
+    height: 47px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+  }
+
+
+  /* SIGN UP BUTTON   */
+  .signup-btn{
+    width: 113px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    background-color: #DD412D;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  
+ /* POST YOUR ENQUIRY */
+  .Enquiry{
+
+      color: #297E8E !important;
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+
+
+
+/* LINK BAR   */
+.linkGrid{
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;    
+  }  
+  
+.linkGrid > div{
+    text-align: center;
+    padding: 6px 0;
+  }
+  
+
+.drphd:hover{
+    color: #dd412d !important ;
+  }
+
+
+
+/* MENUBAR */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+     padding: 10px;
+    background-color:#297d8e ;
+    color: #ffffff !important;
+  }
+
+  .Link{
+    text-decoration: none;
+  }
+
+  /* .Menubar{
+    background-color: #297e8e;
+    color: #ffffff;
+    display: flex;
+    padding: 5px 10px;
+  
+  } */
+  
+  /* .Menuitem{
+    display: inline-flex;
+    margin: 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  
+  } */
+  .grid-container > div {
+  
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  

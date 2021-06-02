@@ -1,31 +1,34 @@
+import React, { Component } from 'react';
+import './ProductSlider.css';
 import ProductCard from './ProductCard';
-import React,{useRef, useState} from 'react';
+// import '../App.css';
+// import React,{useRef, useState} from 'react';
 import productData from './productdata';
-import {Swiper, SwiperSlide} from "swiper/react";
-import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
-import "swiper/components/navigation/navigation.min.css"
-import SwiperCore, {
-    Pagination,Navigation
-  } from 'swiper/core';
-  SwiperCore.use([Pagination,Navigation]);
+import HorizontalSlider from 'react-horizontal-slider';
+import ScrollMenu from 'react-horizontal-scrolling-menu';
+
 
 
 function createCard(productData){
     return(
-        <ProductCard
+        
+            <ProductCard
         key= {productData.id} 
         image= {productData.pro_img}
         name= {productData.pro_name}
         disc= {productData.pro_disc}
         price={productData.pro_price}
         />
+        
+        
     )
 
 }
 
+// ARRAY TO STORE LIST OF PRODUCT CARDS
+const arr= new Array(productData.map(createCard));
 
-
+  
 function Productslider(){
 
     return(
@@ -38,16 +41,8 @@ function Productslider(){
                     <button className="view_button">View all</button>
                 </span>
             </div>
-            <div className="slider">
-            <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true} pagination={{
-            "clickable": true
-           }} navigation={true} className="mySwiper">
-             <SwiperSlide> {productData.map(createCard)}   
-             </SwiperSlide>
-             </Swiper>
-            
-            
-            
+            <div className="product-main-slider slider">            
+         {arr}            
             </div>
         </div>
     )
