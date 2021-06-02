@@ -8,7 +8,6 @@ import ProductSliderSection from './Components/PRODUCT SLIDER/ProductSliderSecti
 import Footer from './Components/BOTTOM SECTION/Footer';
 import TopImageSlider from './Components/TOP SLIDER/TopImageSlider';
 import { SliderData } from './Components/TOP SLIDER/SliderData';
-// import Productslider from './Components/PRODUCT SLIDER/productslider';
 
 function App() {
   return (
@@ -19,19 +18,7 @@ function App() {
         <TopImageSlider slide={SliderData}/> 
         <ProductSliderSection/>
         <Footer/>
-
-
-        {/* <Navbar/>
-        <LinkItems/> 
-        <Menubar/>
-        <TopImageSlider slide={SliderData}/> 
-        <Productslider/>
-        <Productslider/>
-        <Productslider/>
-        <Productslider/>
-  
-         <Footer/> */}
-     </div>
+    </div>
   );
 }
 
